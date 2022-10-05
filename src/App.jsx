@@ -121,7 +121,7 @@ function App() {
     
     <div className="App card">
       <div className="card-body">
-        <img className='img-thumbnail img-fluid' src={Logo} style={{height:"350px"}} alt="" />
+        <img className='img-thumbnail img-fluid' src={Logo} style={{maxHeight:"350px"}} alt="" />
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <h3 className='card-title' style={{fontFamily:"'Helvetica', cursive"}}>Horoscopo</h3>
