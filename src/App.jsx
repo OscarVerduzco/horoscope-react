@@ -124,12 +124,11 @@ function App() {
         <img className='img-thumbnail img-fluid' src="src/assets/img/logo.jpeg" style={{height:"350px"}} alt="" />
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <h3 className='card-title' style={{fontFamily:"'Eagle', sans-cursive"}}>Horoscopo</h3>
+            <h3 className='card-title' style={{fontFamily:"'Helvetica', cursive"}}>Horoscopo</h3>
             <h6 className='form-label' htmlFor="birthdate">Ingresa tu fecha de nacimiento</h6>
             <input  className='form-control' type="date"  name="birthdate" onChange={handleFormChange} id="birthdate"/>
             {zodiacSign && <p className='text-center'>Tu signo zodiacal es: {zodiacSign}</p>}
-            {zodiacHoroscope && <p className='text-center'>Tu horoscopo de hoy: {zodiacHoroscope}</p>}
-        
+            {zodiacHoroscope && <p className='text-center'>Tu horoscopo de hoy: {zodiacHoroscope}</p>}        
             {zodiacImgUrl && <img className='img-fluid' src={zodiacImgUrl} style={{height:"200px"}} alt=""/>}
           </div>
         </form>
